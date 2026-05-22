@@ -20,8 +20,6 @@ button.addEventListener("click", function () {
     const response = await fetch(`${url}&appid=${apiKey}&q=${cityName}`);
     const data = await response.json();
 
-
-
     if (data.cod === 200){
 
         document.querySelector('.empty').style.display = 'none'; 
@@ -30,22 +28,21 @@ button.addEventListener("click", function () {
         document.querySelector('.city').innerHTML = data.name;
         document.querySelector('#humidity-val').innerHTML = `${data.main.humidity} %`;
 
-        if (data.weather.main === 'Clouds'){
+
+        const weatherCondition = data.weather[0].main;
+
+        if (weatherCondition === 'Clouds'){
             document.querySelector('.weather-img-type').src = './images/clouds.png';
-        }else if (data.weather.main === 'Clear'){
+        }else if (weatherCondition === 'Clear'){
             document.querySelector('.weather-img-type').src = './images/clear.png';
-        }else if (data.weather.main === 'Drizzle'){
+        }else if (weatherCondition === 'Drizzle'){
             document.querySelector('.weather-img-type').src = './images/drizzle.png';
-        }else if (data.weather.main === 'Humidity'){
-            document.querySelector('.weather-img-type').src = './images/humidity.png';
-        }else if (data.weather.main === 'Mist'){
+        }else if (weatherCondition === 'Mist'){
             document.querySelector('.weather-img-type').src = './images/mist.png';
-        }else if (data.weather.main === 'Snow'){
+        }else if (weatherCondition === 'Snow'){
             document.querySelector('.weather-img-type').src = './images/snow.png';
-        }else if (data.weather.main === 'Rain'){
+        }else if (weatherCondition === 'Rain' || weatherCondition === 'Thunderstorm'){
             document.querySelector('.weather-img-type').src = './images/rain.png';
-        }else if (data.weather.main === 'Wind'){
-            document.querySelector('.weather-img-type').src = './images/wind.png';
         }
     }else{
         // mainDiv.classList.add('hidden');
@@ -54,7 +51,6 @@ button.addEventListener("click", function () {
         document.querySelector('.empty').style.display = 'block'; 
         document.querySelector('.main').style.display = 'none';
 
-        
     }
   }
 
