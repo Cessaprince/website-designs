@@ -1,0 +1,95 @@
+@media (max-width: 768px){
+    .profile{
+        flex-direction: column;
+    }
+
+    .profile .right{
+        display: none;
+    }
+
+   #intro-text{
+    font-size: 14px;
+
+   }
+
+    .left h2{
+        font-size: 32px;
+    }
+
+    .left .skill{
+        font-size: 17px;
+    }
+    
+    .desc{
+        font-size: 15px;
+        
+    }
+    .resume{
+        gap: 10px;
+    }
+
+        
+    .resume button{
+        padding: 15px 30px;
+        font-size: 13px;
+    }
+
+    .icon{
+        padding: 14px 16px;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+
+    .interests{
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .interest-text{
+        font-size: 20px;
+    }
+
+
+    .about-right{
+        padding: 0;
+    }
+
+    .tech-stack{
+        font-size: 20px;
+        margin: 40px 0 20px 0;
+    }
+
+    .languages{
+        gap: 35px;
+        height: auto;
+    }
+
+    .project{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .contact{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-left-text{
+        font-size: 22px;
+    }
+
+
+    .contact-right{
+        width: 100%;
+}
+
+    .navbar{
+        gap: 15px;
+        padding: 10px;
+    }
+
+
+}

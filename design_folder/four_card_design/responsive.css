@@ -1,0 +1,35 @@
+@media (max-width:550px){
+
+    body{
+        height: auto;
+        width: 100vw;
+        padding: 0 20px;
+    }
+
+    .light-text{
+        font-size: 13px;
+    }
+
+    .heading{
+        font-size: 22px;
+    }
+
+    .four-box{
+        flex-direction: column;
+        margin: 50px 0 10px;
+    }
+
+    .white-box{
+        margin: 0 20px;
+    }
+
+    .white-box .dark-text{
+        font-size: 20px;
+    }
+
+    .white-box .small{
+        font-size: 14px;
+        margin: 0 0 15px;
+    }
+
+}

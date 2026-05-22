@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!--The Container that holds the weather info-->
+    <div class="container">
+
+        <div class="child">
+
+            <!--Search Bar-->
+            <div class="search">
+                <input type="search" name="" id="" spellcheck="false" class="search-input"
+                    placeholder="Enter your City name">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
+            </div>
+
+            <!--Main Body-->
+            <div class="main">
+
+
+                <!--The weather image, temeperature and name of city-->
+                <div class="weather">
+                    <div class="weather-img">
+                        <img src="./images/clear.png" alt="" class="weather-img-type">
+                    </div>
+                    <p class="temperature">43°C</p>
+                    <p class="city">Delhi</p>
+                </div>
+
+
+                <!--The information for the city's humidity and wind-->
+                <div class="weather-info">
+                    <div class="desc">
+                        <div class="desc-img">
+                            <img src="./images/humidity.png" alt="">
+                        </div>
+                        <div class="desc-info">
+                            <p class="desc-value" id="humidity-val">19%</p>
+                            <p class="desc-name humidity">Humidity</p>
+                        </div>
+                    </div>
+
+                    <div class="desc">
+                        <div class="desc-img">
+                            <img src="./images/wind.png" alt="">
+                        </div>
+                        <div class="desc-info">
+                            <p class="desc-value" id="wind-speed">4.12km/h</p>
+                            <p class="desc-name">Wind</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="empty">
+                No city found. Search for a city.
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

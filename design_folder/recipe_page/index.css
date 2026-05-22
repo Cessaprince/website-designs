@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.recipe-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    min-height: 100vh;
+    background-color: rgb(254, 241, 229);
+}
+
+.content-body{
+    padding: 30px;
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid rgb(233, 227, 227);
+    border-radius: 15px;
+}
+
+#omelette-img{
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid rgb(233, 227, 227);
+    margin-bottom: 10px;
+}
+
+.recipe-heading{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Times, serif;
+}
+
+h2{
+    color: rgb(2, 50, 2);
+    margin: 10px 0;
+    font-size: 27px;
+}
+
+.recipe-text{
+    font-size: small;
+    color: grey;
+    line-height: 22px;
+}
+
+.recipe-preparation{
+    padding: 20px ;
+    background-color: rgb(251, 244, 250);
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+#preparation{
+    margin-bottom: 10px;
+    color: purple;
+    font-size: 15px;
+}
+
+ul li,
+ol li{
+    padding-left: 15px;
+    line-height: 22px;
+    font-size: small;
+}
+
+ul, ol{
+    padding-left: 15px;
+}
+
+ul li::marker,
+ol li::marker{
+    color: rgb(165, 89, 42);
+    font-weight: bold;
+}
+
+li span{
+    font-weight: bold;
+    color: rgb(83, 82, 82);
+}
+.brown-heading{
+    font-size: 25px;
+    color: rgb(165, 89, 42);
+    margin-bottom: 10px;
+}
+
+.horizontal-line{
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+.nutrition-row{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 5px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+
+}
+
+.nutrition-row span{
+    width: 50%;
+    color: rgb(83, 82, 82);
+    padding-left: 20px;
+}
+
+.nutrition-row strong{
+    color: rgb(165, 89, 42);
+}
+
+.nutrition-row:last-child{
+    border-bottom: none;
+}
