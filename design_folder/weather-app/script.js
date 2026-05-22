@@ -42,6 +42,10 @@ button.addEventListener("click", function () {
             document.querySelector('.weather-img-type').src = './images/mist.png';
         }else if (data.weather.main === 'Snow'){
             document.querySelector('.weather-img-type').src = './images/snow.png';
+        }else if (data.weather.main === 'Rain'){
+            document.querySelector('.weather-img-type').src = './images/rain.png';
+        }else if (data.weather.main === 'Wind'){
+            document.querySelector('.weather-img-type').src = './images/wind.png';
         }
     }else{
         // mainDiv.classList.add('hidden');
