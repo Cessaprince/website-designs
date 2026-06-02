@@ -7,6 +7,7 @@
     --head-grey-text: #b3b3b3;
     --tiny-grey-text: #878787;
     --green-text: #28a745;
+
 }
 
 
@@ -19,7 +20,7 @@
 
 
 section{
-    padding: 30px 70px 30px 145px;
+    padding: 30px 70px 30px 140px;
 }
 
 .aligned{
@@ -156,6 +157,8 @@ section{
     color: var(--blue);
     font-size: 35px;
     font-weight: 600;
+    margin: 10px 0;
+    max-width: 500px;
 }
 
 .sections-desc{
@@ -195,6 +198,10 @@ section{
     font-size: 17px;
 }
 
+#team{
+    background-color: white;
+    margin: 0 0 30px 0;
+}
 #team-aligned{
     display: flex;
     flex-direction: column;
@@ -202,6 +209,61 @@ section{
 }
 
 .team-divs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.whole-team{
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.team-pic{
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.team-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-desc-text{
+    width: 450px;
+    padding-left: 70px;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.team-desc-text p{
+    color: var(--dark-black);
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.team-desc-text span{
+    color: var(--tiny-grey-text);
+    font-weight: 250;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0 0 15px 0;
+
+}
+
+.team-desc-links{
+    display: flex;
+    gap: 15px;
+
+}
+
+.team-desc-links a{
+    text-decoration: none;
+    color: var(--blue);
 }
