@@ -642,10 +642,6 @@ textarea{
     line-height: 29px;
 }
 
-.footer span:hover{
-    color: white;
-    cursor: pointer;
-}
 
 .footer-nav{
     display: flex;
@@ -661,7 +657,8 @@ textarea{
 }
 
 .footer-nav span:hover{
-    color: white;
+        color: white;
+    cursor: pointer;
 }
 
 .newsletter{
@@ -716,15 +713,17 @@ textarea{
 }
 
 .footer-links2 a{
-    text-decoration: none;color: white;
-
+    text-decoration: none;
+    color: white;
 }
 
-
-
-.footer-links2 span{
+.footer-links2 a:hover{
     color: var(--tiny-grey-text);
+
+}
+.copy{
     font-weight: 250;
     font-size: 16px;
+    color: var(--tiny-grey-text);
 
 }
