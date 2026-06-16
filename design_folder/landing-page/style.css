@@ -470,3 +470,261 @@ section{
 .visit-website{
     margin-top: 30px;
 }
+
+.testimonials{
+    margin: 40px 0 100px;
+    background-color: #f9f8f8;
+    padding-bottom: 120px;
+    padding-top: 50px;
+}
+
+.testimonials-head{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 20px;
+}
+
+.testimonial-head2{
+    font-size: 35px;
+    font-weight: 600;
+    display: block;
+    color: var(--blue);
+}
+
+.testimonial-saying{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+}
+
+.testimonial-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.testimonial-comment{
+    margin-top: 50px;
+    display: flex;
+    gap: 15px;
+    height: 100px;
+}
+
+.testimonial-line{
+    height: 100%;
+    width: 32px;
+    background-color: #e7e6e6;
+}
+
+.testimonial-line-side-text{
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 250;
+    color: var(--light-black);
+    line-height: 30px;
+}
+
+
+#chat-form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 0.1px solid rgb(239, 237, 237);
+    box-shadow: 
+    -8px 0px 12px -6px rgba(0, 0, 0, 0.15), 
+     8px 0px 12px -6px rgba(0, 0, 0, 0.15); 
+    padding: 20px 30px;
+    gap: 15px;
+    
+}
+
+.chat{
+    background-color: rgb(254, 254, 254);
+}
+
+.chat-head{
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.chat-head{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--blue);
+    text-transform: capitalize;
+}
+
+
+.form-control{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-control input{
+    padding: 10px;
+    background-color:rgb(236, 236, 236) ;
+    border: 0.1px rgb(236, 236, 236);
+    outline: none;
+    width: 100%;
+}
+
+.form-input#double-input{
+    display: inline-flex;
+    gap: 15px;
+    width: 100%;
+}
+
+#fname{
+    width: 50%;
+}
+
+#lname{
+    flex: 1;
+}
+
+textarea{
+    padding: 10px;
+    background-color:rgb(236, 236, 236) ;
+    border: 0.1px rgb(236, 236, 236);
+    outline: none;
+    width: 100%;
+}
+
+.chat-form-button button{
+    padding: 15px 25px;
+    background-color: var(--blue);
+    color: white;
+    border: 0.1px var(--blue);
+    border-radius: 30px;
+}
+
+.chat-form-button button:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+
+.footer{
+    height: auto;
+    background-color: rgb(55, 55, 55);
+    padding-top: 100px;
+}
+
+.footer-links{
+    display: flex;
+    gap: 100px;
+}
+
+.footer-about{
+    width: 40%;
+}
+
+
+.footer h3{
+    color: white;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+.footer-about-desc{
+    color: var(--tiny-grey-text);
+    font-weight: 250;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.footer span:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-nav span{
+    color: var(--tiny-grey-text);
+    font-weight: 250;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.footer-nav span:hover{
+    color: white;
+}
+
+.newsletter{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+
+.newsletter form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.newsletter form input{
+    padding: 10px 15px;
+    background-color: rgb(236, 236, 236);
+    border: 0.1px rgb(236, 236, 236);
+    outline: none;
+}
+
+.newsletter-button button{
+    padding: 12px 40px;
+    background-color: var(--blue);
+    color: white;
+    border: 0.1px var(--blue);
+    border-radius: 30px;
+}
+
+.newsletter-button button:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+
+.footer-links2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.links-to-page{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-links2 a{
+    text-decoration: none;color: white;
+
+}
+
+
+
+.footer-links2 span{
+    color: var(--tiny-grey-text);
+    font-weight: 250;
+    font-size: 16px;
+
+}
